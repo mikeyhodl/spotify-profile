@@ -106,7 +106,7 @@ const Recommendations = props => {
       return;
     }
 
-    const name = `Recommended Tracks Based on ${playlist.name}`;
+    const name = `Remix of ${playlist.name}`;
     const { data } = await createPlaylist(userId, name);
     setRecPlaylistId(data.id);
   };
